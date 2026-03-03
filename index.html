@@ -570,6 +570,9 @@
                     <input type="text" class="form-control" id="result" placeholder="0" disabled />
                     <span class="input-group-text" id="copy-icon" style="cursor:pointer;" onclick="copyResult()">📋</span>
                   </div>
+                  <div id="memoryIndicator" style="font-weight:bold; visibility:hidden; margin:5px 10px;">
+                    M
+                  </div>
                   <div class="word-display-area" id="word-area">
                     <div id="word-result"></div>
                     <button id="hausa-btn" onclick="translateToHausa()">HA</button>
@@ -709,7 +712,13 @@ border-radius:15px;">
                     <button class="btn btn-special" onclick="calculateFactorial()" title="Factorial: n!">n!</button>
                     <button class="btn btn-action" onclick="applyLogarithm()">log</button>
 
-                    <!-- Row 8 -->
+                    <!-- MEMORY CONTROLS -->
+                    <button class="btn btn-special" onclick="memoryClear()">MC</button>
+                    <button class="btn btn-special" onclick="memoryRecall()">MR</button>
+                    <button class="btn btn-special" onclick="memoryAdd()">M+</button>
+                    <button class="btn btn-special" onclick="memorySubtract()">M-</button>
+
+                    <!--  Row 8                  -->
                     <button class="btn btn-special" onclick="tenPower()">10<sup>x</sup></button>
                     <button id="voice-input-btn" class="btn btn-special" aria-label="Speak calculation input" onclick="startVoiceInput()">🎙️</button>
                     <button class="btn btn-operator" onclick="convertToHex()">HEX</button>
